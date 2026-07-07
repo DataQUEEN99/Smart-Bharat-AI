@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Government-inspired color palette: Deep Saffron, Ashoka Blue, and Forest Green */
+  --color-saffron-50: #fff9f2;
+  --color-saffron-100: #ffeedb;
+  --color-saffron-500: #f58220;
+  --color-saffron-600: #d86810;
+  --color-saffron-700: #b14e0b;
+
+  --color-ashoka-50: #f0f6fc;
+  --color-ashoka-100: #e1eef9;
+  --color-ashoka-500: #0a58ca;
+  --color-ashoka-600: #0645a2;
+  --color-ashoka-700: #053782;
+  --color-ashoka-800: #032152;
+  --color-ashoka-900: #011233;
+
+  --color-tiranga-green-50: #f2fbf4;
+  --color-tiranga-green-100: #e2f6e7;
+  --color-tiranga-green-600: #008123;
+  --color-tiranga-green-700: #00681a;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Custom Utilities and Animations */
+.glass-effect-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-effect-dark {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Elegant fade animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.25;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 10s infinite ease-in-out;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Form validation styling overrides */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
