@@ -1,0 +1,6 @@
+{
+  "name": "Smart Bharat AI",
+  "description": "Your Intelligent Civic Companion for Every Government Service. Access schemes, ask questions in natural language, know required documents, report civic issues, track complaints, and receive multilingual AI assistance.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
